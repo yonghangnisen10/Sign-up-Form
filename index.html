@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-up Form</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="relative">
+  <nav class="fixed top-0 z-50 bg-transparent w-full">
+    <div class="flex flex-row items-center justify-between max-w-6xl mx-auto px-4 sm:px-8 md:px-20 mt-3">
+      <img src="pngwing.png" class="h-8 md:h-10 w-auto my-3 cursor-pointer">
+
+      <div class="flex items-center gap-2 sm:gap-4">
+        <a href="#" class="hidden sm:inline text-white text-sm hover:text-neutral-300 transition-colors duration-200">Already have an account?</a>
+        <button type="button" class="bg-neutral-800/60 border border-neutral-700 text-white text-sm font-medium rounded-lg px-3 py-1.5 md:px-4 md:py-2 transition-colors duration-200 hover:bg-neutral-800 hover:border-neutral-600 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          Log in
+        </button>
+      </div>
+    </div>
+  </nav>
+  <main class="relative min-h-screen lg:h-screen overflow-hidden">
+    <img src="f69d064f-2e42-4f2f-bccc-8e53629b869b.png" class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- Title and Description -->
+    <div class="relative flex flex-col justify-center px-4 sm:px-8 md:px-20 max-w-2xl pt-32 pb-8 lg:h-full lg:pb-0">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-amber-100 tracking-tight"><span class="text-amber-300">Popcorn</span> Review</h1>
+      <p class="text-white text-base sm:text-lg mt-4 max-w-md leading-relaxed [text-shadow:_0_1px_8px_rgb(0_0_0_/_40%)]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam in doloremque, ipsum quos optio obcaecati modi ea. Modi exercitationem blanditiis similique saepe ipsa. Consequatur nesciunt eligendi quas vero aliquid ducimus.</p>
+    </div>
+
+    <!-- Sign-up Form -->
+    <div class="relative lg:absolute lg:inset-y-0 right-0 flex items-center justify-center px-4 sm:px-8 w-full lg:w-1/2 pb-8 lg:pb-0 lg:pt-16">
+      <div class="w-full max-w-md bg-neutral-900 border border-neutral-800 rounded-2xl p-5 sm:p-6">
+        <h2 class="text-xl sm:text-2xl font-bold text-white">Create your account</h2>
+        <p class="text-neutral-400 text-sm mt-1">Fill in the details below to get started.</p>
+
+        <form class="mt-5 space-y-3">
+          <div>
+            <label class="block text-white text-sm font-medium mb-1">Full name</label>
+            <input type="text" placeholder="Enter your full name" class="w-full bg-neutral-800/60 border border-neutral-700 rounded-lg px-4 py-2 text-white placeholder-neutral-500 outline-none transition-colors duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 hover:border-neutral-600">
+          </div>
+
+          <div>
+            <label class="block text-white text-sm font-medium mb-1">Email address</label>
+            <input type="email" placeholder="you@example.com" class="w-full bg-neutral-800/60 border border-neutral-700 rounded-lg px-4 py-2 text-white placeholder-neutral-500 outline-none transition-colors duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 hover:border-neutral-600">
+          </div>
+
+          <div>
+            <label class="block text-white text-sm font-medium mb-1">Password</label>
+            <input type="password" placeholder="Create a password" class="w-full bg-neutral-800/60 border border-neutral-700 rounded-lg px-4 py-2 text-white placeholder-neutral-500 outline-none transition-colors duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 hover:border-neutral-600">
+          </div>
+
+          <div>
+            <label class="block text-white text-sm font-medium mb-1">Confirm password</label>
+            <input type="password" placeholder="Repeat your password" class="w-full bg-neutral-800/60 border border-neutral-700 rounded-lg px-4 py-2 text-white placeholder-neutral-500 outline-none transition-colors duration-200 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/40 hover:border-neutral-600">
+          </div>
+
+          <button type="submit" class="cursor-pointer w-full bg-gradient-to-r from-indigo-500 to-blue-600 text-white font-semibold rounded-lg py-2 shadow-lg shadow-indigo-500/20 transition-all duration-200 hover:from-indigo-400 hover:to-blue-500 hover:shadow-indigo-500/40 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-neutral-900">
+            Sign Up
+          </button>
+
+          <div class="flex items-center gap-4">
+            <div class="flex-1 h-px bg-neutral-700"></div>
+            <span class="text-neutral-500 text-sm">OR</span>
+            <div class="flex-1 h-px bg-neutral-700"></div>
+          </div>
+
+          <button type="button" class="cursor-pointer w-full flex items-center justify-center gap-3 bg-neutral-800/60 border border-neutral-700 text-white font-medium rounded-lg py-2 transition-colors duration-200 hover:bg-neutral-800 hover:border-neutral-600 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-neutral-500">
+            <img src="Google_G_logo.svg.png" class="h-5 w-5 object-contain">
+            Continue with Google
+          </button>
+
+          <p class="text-neutral-400 text-xs text-center">
+            By creating an account, you agree to our
+            <a href="#" class="text-indigo-400 hover:text-indigo-300 underline-offset-2 hover:underline transition-colors duration-200">Terms of Service</a>
+            and
+            <a href="#" class="text-indigo-400 hover:text-indigo-300 underline-offset-2 hover:underline transition-colors duration-200">Privacy Policy</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
